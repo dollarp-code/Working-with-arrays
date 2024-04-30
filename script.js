@@ -108,4 +108,19 @@ console.log([...arr, ...arr2]); // ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
 // JOIN() - DOES NOT MUTATE
 console.log(letters.join(' - ')); // a - b - c - d - e - f - g - h - i - j
 console.log(letters); // ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
- */
+  
+
+// AT() -
+const arr = [23, 11, 64];
+console.log(arr.at(0)); // 23
+console.log(arr[0]); // 23
+
+// getting last array element
+console.log(arr[arr.length - 1]); // 64
+console.log(arr.slice(-1)[0]); // 64
+console.log(arr.at(-1)); // 64
+
+// using the AT() on strings
+console.log('Hussein'.at(0)); // H
+console.log('Hussein'.at(-1)); // n
+*/
