@@ -228,7 +228,7 @@ const movementsUSD = movements.map(mov => mov * euroToUSD);
 console.log(movements);
 console.log(movementsUSD);
 
-// Testing with for-of loop
+// Testing with for-of
 const movementsUSDfor = [];
 for (const mov of movements) movementsUSDfor.push(mov * euroToUSD);
 console.log(movementsUSDfor);
@@ -241,3 +241,14 @@ const movementsDescriptions = movements.map(
 );
 
 console.log(movementsDescriptions);
+
+const arr = [2, 3, 4, 5, 6, 7, 7];
+const newArr = arr.map(function (a) {
+  return a * 2;
+});
+
+console.log(newArr);
+
+arr.forEach(function (a, i) {
+  console.log(`${i + 1}: ${a * 2}`);
+});
