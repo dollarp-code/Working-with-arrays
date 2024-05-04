@@ -255,7 +255,7 @@ arr.forEach(function (a, i) {
 
 const names = ['shola', 'dipo', 'layi', 'shade'];
 const kk = names.map(name => {
-  return name[[0]].toUpperCase() + name.slice(1);
+  return name[0].toUpperCase() + name.slice(1);
 });
 
 console.log(kk);
