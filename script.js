@@ -259,3 +259,19 @@ const kk = names.map(name => {
 });
 
 console.log(kk);
+
+// FILTER METHOD
+const deposits = movements.filter(function (mov) {
+  return mov > 0;
+});
+console.log(deposits);
+
+const withdrawals = movements.filter(withdraw => withdraw < 0);
+
+console.log(withdrawals);
+
+const depositsfor = [];
+for (const mov of movements) {
+  if (mov > 0) depositsfor.push(mov);
+}
+console.log(depositsfor);
