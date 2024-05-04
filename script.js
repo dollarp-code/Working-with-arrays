@@ -252,3 +252,10 @@ console.log(newArr);
 arr.forEach(function (a, i) {
   console.log(`${i + 1}: ${a * 2}`);
 });
+
+const names = ['shola', 'dipo', 'layi', 'shade'];
+const kk = names.map(name => {
+  return name[[0]].toUpperCase() + name.slice(1);
+});
+
+console.log(kk);
