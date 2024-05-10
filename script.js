@@ -275,3 +275,17 @@ for (const mov of movements) {
   if (mov > 0) depositsfor.push(mov);
 }
 console.log(depositsfor);
+
+// REDUCE METHOD
+
+// const balance = movements.reduce(function(acc, cur, i, arr){
+//   console.log(`Iteration ${i}: ${acc}`);
+//   return acc + cur;
+// }, 0);
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balance);
+
+// Using for of loop
+let balance2 = 0;
+for (const mov of movements) balance2 += mov;
+console.log(balance2);
